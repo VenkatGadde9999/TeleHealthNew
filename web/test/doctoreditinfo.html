@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<head>
+    <style> 
+form {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+}
+.rq {
+color: 
+#FF0000;
+font-size: 10pt;
+}
+    </style>
+   
+</head>
+<body>
+<script>
+    function myFunction() {
+        var x = document.forms["myform"]["firstname"].value;
+        var y = document.forms["myform"]["lastname"].value;
+        var z = document.forms["myform"]["email"].value;
+        var a = document.forms["myform"]["phonenumber"].value;
+        var b = document.forms["myform"]["education"].value;
+        var c = document.forms["myform"]["employmenthistory"].value;
+        var d = document.forms["myform"]["ssn"].value;
+        var e = document.forms["myform"]["hospitalname"].value;
+        var f = document.forms["myform"]["specialization"].value;
+        var g = document.forms["myform"]["myFile"].value;
+        var g1 = document.forms["myform"]["address"].value;
+        var g2 = document.forms["myform"]["user_time_zone"].value;
+        var h = document.forms["myform"]["user"].value;
+        var i = document.forms["myform"]["password"].value;
+        var j = document.forms["myform"]["cpassword"].value;
+        var k = document.forms["myform"]["price"].value;
+  if (x == "" || y=="" || z=="" || a == "" || b == "" || c == "" || d == "" || e == "" || f == "" || g == "" || g1 == "" || g2 == "" || h == "" || i == "" || j == "" || k == "" ) {
+    alert("Fill out all fields");
+    $('input').val('').css( "border-color", "red" );
+				  $('#form1').find('#total').val('');
+    return false;
+  }
+}
+    </script>
+    
+<link rel="stylesheet" href="app/grid.css">
+
+<div class="container">
+    <h1>Edit Profile</h1>
+    <hr>
+    <div class="row">
+        <!-- left column -->
+        <form class="form-horizontal" role="form" id='myform' onsubmit="return myFunction()" method="post">
+
+            <!-- <div class="text-center"> -->
+                <!-- <img src="images/doc2.jpg"  alt="avatar" style="width:100px">
+                
+                
+                <h6>Upload a different photo...</h6>
+
+                <input type="file" class="form-control">
+            </div> -->
+
+
+            <div class="form-group">
+                <label class="col-lg-3 control-label">First name:</label>
+                <li class="rq"></li>
+                <input type="text" id="firstname" name="firstname">
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">Last name:</label>
+                <li class="rq"></li>
+                <input type="text" id="lastname" name="lastname">
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">Email:</label>
+                <li class="rq"></li>
+                <input  type="text" id="email" name="email">
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">Phone number:</label>
+                <li class="rq"></li>
+                <!-- <input type="text" id="phonenumber" name="phonenumber" > -->
+                <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">Education</label>
+                <li class="rq"></li>
+                <input class="form-control" type="text" value="">
+                <input type="file" id="education" name="education">
+                
+
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label"> Employment History:</label>
+                <li class="rq"></li>
+                <input class="form-control" id="employmenthistory" type="employmenthistory" value="">
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">SSN: </label>
+                <li class="rq"></li>
+                <input class="form-control" id="ssn" type="ssn" value="" placeholder="xxx-xx-xxxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}"><br></br>
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">Hospital Name:</label>
+                <li class="rq"></li>
+                <input class="form-control" id="hospitalname" type="text" value="">
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">Specialization: </label>
+                <li class="rq"></li>
+                <input class="form-control"  id="specialization" type="text" value="">
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label"> License: </label>
+                <li class="rq"></li>
+                <input class="form-control" type="text" value="">
+                <input type="file" id="myFile" name="filename">
+               
+
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">Address: </label>
+               
+                <input class="form-control" id="address" type="text" value="">
+
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">Time Zone:</label>
+                <li class="rq"></li>
+
+                <select id="user_time_zone" class="form-control">
+                    <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                    <option value="Alaska">(GMT-09:00) Alaska</option>
+                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                    <option value="Arizona">(GMT-07:00) Arizona</option>
+                    <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                    <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                    <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                    <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                </select>
+
+
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Username:</label>
+                <li class="rq"></li>
+                <input class="form-control" id="user" type="text" value="">
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Password:</label>
+                <li class="rq"></li>
+                <input  placeholder="8 Characters" pattern="[-a-z0-9~!$%^&*_=+}{\\'?@]{8,}" class="form-control"  id="password" type="text" value="">
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Confirm password:</label>
+                <li class="rq"></li>
+                <input  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control" id="cpassword" type="text" value="">
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">Change Price:</label>
+                <li class="rq"></li>
+                <input class="form-control" type="text" id="price" value="">
+                
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-md-3 control-label"></label>
+
+                <input type="submit" id="myButton" class="btn btn-primary" value="Save Changes">
+                <span></span>
+                <input type="reset" class="btn btn-default" value="Cancel">
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+<hr>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<html lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="CareMed demo project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/elements.css">
+    <link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
+</head>
+
+
+<BODY>
+    <div class="super_container">
+
+        <!-- Header -->
+
+        <header class="header trans_200">
+
+            <!-- Top Bar -->
+            <div class="top_bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+                                <div class="top_bar_item"><a href="#">FAQ</a></div>
+                                <div class="top_bar_item"><a href="#">Request an Appointment</a></div>
+                                <div class="emergencies  d-flex flex-row align-items-center justify-content-start ml-auto">For Emergencies: +563 47558 623</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Content -->
+            <div class="header_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                                <nav class="main_nav ml-auto">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About us</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="news.html">News</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo -->
+            <div class="logo_container_outer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-column align-items-start justify-content-center">
+                                        <div class="logo_line"></div>
+                                        <div class="logo d-flex flex-row align-items-center justify-content-center">
+                                            <div class="logo_text">Tele<span>Health</span></div>
+                                            <div class="logo_box">+</div>
+                                        </div>
+                                        <div class="logo_sub">Health Care Center</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+        </header>
+        <!-- Menu -->
+
+        <div class="menu_container menu_mm">
+
+            <!-- Menu Close Button -->
+            <div class="menu_close_container">
+                <div class="menu_close"></div>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="menu_inner menu_mm">
+                <div class="menu menu_mm">
+                    <ul class="menu_list menu_mm">
+                        <li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+                        <li class="menu_item menu_mm"><a href="about.html">About us</a></li>
+                        <li class="menu_item menu_mm"><a href="services.html">Services</a></li>
+                        <li class="menu_item menu_mm"><a href="news.html">News</a></li>
+                        <li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="menu_extra">
+                    <div class="menu_appointment"><a href="#">Request an Appointment</a></div>
+                    <div class="menu_emergencies">For Emergencies: </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Home -->
+
+        <div class="home">
+            <div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/contact.jpg" data-speed="0.8"></div>
+            <div class="home_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="home_content">
+                                <div class="home_title">Book <span>Appointment</span></div> 
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container" >  
+                <div class="row">
+                    <div class="col-lg-8">
+            <FORM>
+                <h3>Enter Details to book an appointment </h3>
+                <hr>
+
+                <P> Select type of appointment:
+                    <input type="radio" id="video_appointment_type" name="appointment_type" value="video">
+                    <label for="video"> Video Appointment</label>
+                    <input type="radio" id="audio_appointment_type" name="audio_appointmeent_type" value="audio">
+                    <label for="audio"> Audio Appointment</label><br>
+                </P>
+
+                <P> Describe the reason for this appointment?</P>
+                <input type="testbox" id="txt1" name="reason_of_appointment" size="105"><br>
+                <label for="txt1"> <br> <br>
+                    <label for="appointment">Select date of the appointment : </label>
+
+                    <input type="date" data-date-inline-picker="true" id="appointment_date" name="appointment_date" max="4/22/2021">
+
+                    <br>
+                    <h2>Health History</h2>
+                    <p> Have you ever been diagnosed, treated, tested or given medical advice by a physician or other health care
+                        provider for:</p>
+
+                    <ol>
+                        <div class="row">
+                            <div class="column" >  
+                                <li>chest pain or heart problems <label for="chest_pain_yes">
+                                        <input id="chest_pain_yes" type="radio" name="yes_chest_pain">yes
+                                    </label> 
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label>
+                                </li><BR>
+                                <li>high blood pressure? <input id="chest_pain_yes" type="radio" name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label></li>
+                                </li><BR>
+                                <li>anemia, leukemia or other blood disorder? <input id="chest_pain_yes" type="radio" name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label>
+                                </li><BR>
+                                <li> cancer or tumors? <input id="chest_pain_yes" type="radio" name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label>
+                                </li><BR>
+                                <li> diabetes? <input id="chest_pain_yes" type="radio" name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label>
+                                </li><BR>
+                                <li> arthritis, carpal tunnel, or any muscle insulin treated? weakness? </li><input id="chest_pain_yes" type="radio"
+                                                                                                                    name="yes_chest_pain">yes
+                                </label>
+                                <label for="chest_pain_no">
+                                    <input id="chest_pain_no" type="radio" name="no_chest_pain">no 
+                                </label><br>
+                                <BR>
+                                <li> kidney or urinary tract disorder?<input id="chest_pain_yes" type="radio"
+                                                                             name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label>
+                                </li><BR>
+                                <li>asthma, tuberculosis, pneumonia, or other m. kidney or urinary tract disorder?<input id="chest_pain_yes" type="radio"
+                                                                                                                         name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label></li>
+                            </div>
+                            <div class="column">
+                                <li>ulcers, stomach or liver disorder? <input id="chest_pain_yes" type="radio"
+                                                                              name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label></li><BR>
+                                <li>colitis, Crohn’s or any intestinal disorder?<input id="chest_pain_yes" type="radio"
+                                                                                       name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label></li><BR>
+                                <li> Epilepsy, paralysis or dizziness?
+                                    <input id="chest_pain_yes" type="radio"
+                                           name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label></li><BR>
+                                <li>mental or nervous disorder?
+                                    <input id="chest_pain_yes" type="radio"
+                                           name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label></li><BR>
+                                <li>Lyme disease, Epstein-Barr or chronic fatigue?     
+                                    <input id="chest_pain_yes" type="radio"
+                                           name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label></li><BR>
+                                <li>thyroid or other gland disorder?
+                                    <input id="chest_pain_yes" type="radio"
+                                           name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label></li><BR>
+                                <li>back, neck or spinal disorder?
+
+                                    <input id="chest_pain_yes" type="radio"
+                                           name="yes_chest_pain">yes
+                                    </label>
+                                    <label for="chest_pain_no">
+                                        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                    </label></li> </ol>
+                            </div>
+                        </div>
+                        
+
+
+
+
+                        <div>
+                            <label for="providers">Choose Your Insurance Provider</label>
+                            <select name="providers" id="insurance_provider">
+                                <option value="default">Select</option>
+                                <option value="united">United Healthcare</option>
+                            </select>
+                            <P>Is the person booking the appointment the primary health Insurance holder?  <input id="chest_pain_yes" type="radio"
+                                                                                                                  name="yes_chest_pain">yes
+                                </label>
+                                <label for="chest_pain_no">
+                                    <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+                                </label></li></P>
+                            <P>Enter your insurance Identification number :
+                                <input type="testbox" id="txt2" name="insurance_number" size="15"><br>
+                            </P>
+                        </div>
+                        <div>
+                            <h2>Required Forms</h2>
+                            <P> please submit the above forms and following documents by attaching at the link below</P>
+                            <p>1. Insurance ID card </p>
+                            <p>2. Placeholder form #1 </p>
+                            <p>3. Placeholder form #2 </p> 
+                            <input type="file" placeholder="link" required><br><br>
+                            <button onclick="myFunction()">Upload Another Document</button>
+
+                            <button type="submit">Submit</button>
+                            <hr> <br>
+                        </div>
+                        <div class="container">
+                            <div class="vertical-center">
+                                <input type="submit" value="Confirm Appointment">
+                            
+                        </FORM>
+                        </div>
+                        </div>
+                        </div>
+                </div>
+                        <!-- Footer -->
+
+                        <footer class="footer">
+                            <div class="footer_container">
+                                <div class="container">
+                                    <div class="row">
+
+                                        <!-- Footer - About -->
+                                        <div class="col-lg-4 footer_col">
+                                            <div class="footer_about">
+                                                <div class="footer_logo_container">
+                                                    <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                                                        <div class="logo_content">
+                                                            <div class="logo d-flex flex-row align-items-center justify-content-center">
+                                                                <div class="logo_text">Tele<span>Health</span></div>
+                                                                <div class="logo_box">+</div>
+                                                            </div>
+                                                            <div class="logo_sub">Health Care Center</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="footer_about_text">
+                                                    <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum.</p>
+                                                </div>
+                                                <ul class="footer_about_list">
+                                                    <li><div class="footer_about_icon"><img src="images/phone-call.svg" alt=""></div><span>+45 677 8993000 223</span></li>
+                                                    <li><div class="footer_about_icon"><img src="images/envelope.svg" alt=""></div><span>office@template.com</span></li>
+                                                    <li><div class="footer_about_icon"><img src="images/placeholder.svg" alt=""></div><span>Main Str. no 45-46, b3, 56832, Los Angeles, CA</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Footer - Links -->
+                                        <div class="col-lg-4 footer_col">
+                                            <div class="footer_links footer_column">
+                                                <div class="footer_title">Useful Links</div>
+                                                <ul>
+                                                    <li><a href="#">Testimonials</a></li>
+                                                    <li><a href="#">FAQ</a></li>
+                                                    <li><a href="#">Apply for a Job</a></li>
+                                                    <li><a href="#">Terms & Conditions</a></li>
+                                                    <li><a href="#">Our Partners</a></li>
+                                                    <li><a href="#">Services</a></li>
+                                                    <li><a href="#">Free services</a></li>
+                                                    <li><a href="#">About us</a></li>
+                                                    <li><a href="#">News</a></li>
+                                                    <li><a href="#">Contact</a></li>
+                                                    <li><a href="#">Our Screening Program</a></li>
+                                                    <li><a href="#">FAQ</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Footer - News -->
+                                        <div class="col-lg-4 footer_col">
+                                            <div class="footer_news footer_column">
+                                                <div class="footer_title">Useful Links</div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="footer_news_title"><a href="news.html">Aliquam ac eleifend metus</a></div>
+                                                        <div class="footer_news_date">March 10, 2018</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer_news_title"><a href="news.html">Donec in libero sit amet mi vulputate</a></div>
+                                                        <div class="footer_news_date">March 10, 2018</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer_news_title"><a href="news.html">Aliquam ac eleifend metus</a></div>
+                                                        <div class="footer_news_date">March 10, 2018</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="copyright">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="copyright_content d-flex flex-lg-row flex-column align-items-lg-center justify-content-start">
+                                                <div class="cr"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+                                                <div class="footer_social ml-lg-auto">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>			
+                            </div>
+                        </footer>
+
+
+                        <script src="js/jquery-3.2.1.min.js"></script>
+                        <script src="styles/bootstrap4/popper.js"></script>
+                        <script src="styles/bootstrap4/bootstrap.min.js"></script>
+                        <script src="plugins/greensock/TweenMax.min.js"></script>
+                        <script src="plugins/greensock/TimelineMax.min.js"></script>
+                        <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+                        <script src="plugins/greensock/animation.gsap.min.js"></script>
+                        <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+                        <script src="plugins/progressbar/progressbar.min.js"></script>
+                        <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+                        <script src="plugins/easing/easing.js"></script>
+                        <script src="plugins/parallax-js-master/parallax.min.js"></script>
+                        <script src="js/about.js"></script>
+                        <script>function myFunction() {
+                                                            var x = document.createElement("INPUT");
+                                                            x.setAttribute("type", "file");
+                                                            document.body.appendChild(x);
+                                                        }</script>
+                        </body>
+                        </html>

@@ -1,0 +1,85 @@
+<html> 
+  
+<head> 
+    <!-- Importing jquery cdn -->
+    <link href= 
+"http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" 
+        rel="Stylesheet"
+        type="text/css" /> 
+  
+    <script type="text/javascript" 
+        src="http://code.jquery.com/jquery-1.7.2.min.js"> 
+    </script> 
+  
+    <script type="text/javascript" 
+        src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"> 
+    </script> 
+  
+    <!-- JavaScript function to display the calendar -->
+    <script> 
+        $(document).ready(function () { 
+            $("#txtdate").datepicker();
+        }); 
+    </script> 
+  <script>
+    function manage(txtdate, timeslot)
+    {
+        var bt = document.getElementById('Pay');
+        if (txtdate.value != ' ' && timeslot.value!='Select Option') {
+            bt.disabled = false;
+        }
+        else {
+            bt.disabled = true;
+        }
+
+}
+</script> 
+
+</head> 
+  
+<body> 
+    <div class="row">
+        <div class="row">
+            <p style='color:rgb(10, 10, 10); display:inline-block; font-weight: bold;'>APPOINTMENT BOOKING</p>
+        </div>
+        <div class="row">
+            <div class="row" style="background-color:lightcyan">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="doctor.png" alt="Avatar" style="width:100px" align="right">
+                        <div class="card-body">
+                            <p class="card-text">Dr. Michael, David</p>
+                            <p class="card-text">Dermatologist</p>
+                            <p class="card-text">Experience 14 years 3 months
+                                <span style='color:red;margin-right:23.25cm; display:inline-block;'>&nbsp;</span>Price: $40
+                                <span style='color:red;margin-right:.25cm; display:inline-block;'>&nbsp;</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    <form class="form-group"> 
+        Date : 
+        <input id="txtdate" type="text" 
+            class="form-control" onclick="manage(txtdate,timeslot)" /> 
+
+    </form> 
+        
+        
+        <label for="timeslot">Choose a Time Slot:</label>
+  <select name="timeslot" id="timeslot" onChange="manage(txtdate,timeslot)">
+    <option value="Select Option">Select Option</option>
+    <option value="10:00">10:00 am</option>
+    <option value="11:00">11:00 am</option>
+    <option value="1:00">1:00 pm</option>
+    <option value="2:00">2:00 pm</option>
+  </select>
+  <br><br>
+        <span id="fooBar">&nbsp;</span>
+        
+       
+
+<button  type="button" id="Pay" disabled />Pay</button>
+</body>
+
+
+</html>

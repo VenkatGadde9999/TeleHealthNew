@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-fragment_3_1.xsd"
+         version="3.1"
+         metadata-complete="true">
+    
+    <servlet>
+        <servlet-name>eappointment</servlet-name>
+        <servlet-class>servletclasses.edit_appointment</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>eappointment</servlet-name>
+        <url-pattern>/patient/editappointment</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>addappointment</servlet-name>
+        <servlet-class>servletclasses.addnewappointment</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addappointment</servlet-name>
+        <url-pattern>/patient/newappointment</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>doctorinfo</servlet-name>
+        <servlet-class>servletclasses.docpersonalinfo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>doctorinfo</servlet-name>
+        <url-pattern>/doctor/docinfo</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>doctorinfoedit</servlet-name>
+        <servlet-class>servletclasses.docpersonalinfoedit</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>doctorinfoedit</servlet-name>
+        <url-pattern>/doctor/docinfoedit</url-pattern>
+    </servlet-mapping>
+   
+    <servlet>
+        <servlet-name>patientpersonalinfo</servlet-name>
+        <servlet-class>servletclasses.patientpersoninfo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>patientpersonalinfo</servlet-name>
+        <url-pattern>/patient/patientinfo</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>patientpersonalinfoedit</servlet-name>
+        <servlet-class>servletclasses.patientpersoninfoedit</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>patientpersonalinfoedit</servlet-name>
+        <url-pattern>/patient/patientinfoedit</url-pattern>
+    </servlet-mapping>
+</web-app>

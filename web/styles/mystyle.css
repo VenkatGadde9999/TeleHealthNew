@@ -1,0 +1,245 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+div.boder-box {
+  background: #293f50;
+  background: radial-gradient(#648880, #293f50);
+  //background: radial-gradient(#f6f1d3,#648880, #293f50);
+    color: #888;
+    font: 300 16px/22px "Lato-Black", "Open Sans-Regular", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width : 95%;
+    height: 96%;
+    margin-left : auto;
+    margin-right : auto;
+}
+div.content-box                 /*page white part without extending*/
+{
+    margin: 30px 0;
+    background: white;
+    padding: 20px;
+    clear: both;
+    height:1550px;
+    opacity: 1;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+div.docimage
+{
+   // width:430px; height:450px; border-radius: 250px; margin-top: 40px;
+   margin:155px;
+    width:450px;
+    height:520px;
+   // border:1px solid;
+    border-radius: 50px;
+}
+.wrapper {
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    box-shadow: 20px 20px 80px rgb(206, 206, 206)
+}
+div.content-box-ext               /*page white part extanding */
+{
+    
+    margin: 30px 0;
+	background: white;
+	padding: 20px;
+	clear: both;
+    height:100%;
+    opacity: 1;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.btn            /*buttons in table add/edit/delete*/
+{
+   
+    border: none;
+    color: white;
+    width: auto;
+    height:35px;
+    padding: 4px 22px;
+    /*text-align: center;*/
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #4CAF50;
+    border-radius: 4px;
+}
+div.container-login                    /*login backgrount*/
+{
+    border-radius: 5px;
+    background-color:#f2f2f2;
+    padding-top:10px;
+    padding-bottom: 30px;
+    width:60%;
+    margin-bottom: 40px;
+    //*margin-top: 100px;*/
+}
+
+div.container-tbl         /*table background*/
+{
+    border-radius: 5px;
+    background-color:#f2f2f2;
+    padding-top:10px;
+    padding-bottom: 30px;
+    width:100%;
+    margin-top: 100px;
+}
+
+div.page-heading               /*heading background */
+{
+    
+    border-radius: 5px;
+    margin-top:50px; 
+    width:60%;
+    height:55px;
+    padding:15px;
+    padding-top: 15px;
+    
+    font-size:1.5em;
+    font-family: candara;
+    
+    text-align: center;
+    vertical-align:bottom;
+    background:red;color:white;
+}
+
+div.page-header
+{
+    padding:15px;
+    padding-bottom: 120px;
+}
+
+input[type="submit"],button
+{
+    border: none;
+    color: white;
+    width: 88%;
+    height:40px;
+    padding: 4px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #4CAF50;
+    border-radius: 4px;
+}
+input:hover,
+button:hover {
+  opacity: 1;
+}
+
+stdimage
+{
+    //margin-bottom:25px;
+    
+    margin-top: 40px;
+    border:1px solid #ccc!important;
+    width:430px;
+    height:450px;    
+    border-radius: 50px;
+    //margin-top: 40px;"
+}
+/*----------------------------------*/
+/* copied form existing doc*/
+
+.wrapper {
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    box-shadow: 20px 20px 80px rgb(206, 206, 206)
+}
+
+.h2 {
+
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #400485;
+   
+}
+
+.h4 {
+    font-family: 'Poppins', sans-serif
+}
+
+.input-field {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #400485;
+    color: #400485
+}
+
+.input-field:hover {
+    color: #7b4ca0;
+    border: 1px solid #7b4ca0
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 0px 2px;
+    font-family: 'Poppins', sans-serif
+}
+
+.fa-eye-slash.btn {
+    border: none;
+    outline: none;
+    box-shadow: none
+}
+
+a {
+    text-decoration: none;
+    color: #400485;
+    font-weight: 700
+}
+
+a:hover {
+    text-decoration: none;
+    color: #7b4ca0
+}
+
+
+.btn.btn-block {
+    border-radius: 20px;
+    background-color: #400485;
+    color: #fff
+}
+
+
+    forgot {
+        font-size: 0.95rem
+    }
+
+.dropbtn {
+  background-color: #808080;
+  color: black;
+  width: auto; 
+ padding: 10px 18px;
+  margin: 10px 5px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  
